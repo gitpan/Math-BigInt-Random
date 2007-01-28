@@ -1,4 +1,8 @@
 Revision history for Perl module Math::BigInt::Random
-0.10 Tue 23 Jan 2007
+0.01 Tue 23 Jan 2007
     - original version
+0.02 Sat 27 Jan 2007
+    - pod revision
+    - add binary size length specification option
+    - add random.org internet random digits option
 
