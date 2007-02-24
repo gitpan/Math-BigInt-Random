@@ -1,6 +1,6 @@
 package Math::BigInt::Random;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 use strict;
 use warnings;
@@ -105,6 +105,7 @@ sub get_random_org_digits {
     my $request = "http://www.random.org/cgi-bin/randnum?num=$count&min=0&max=$max&col=1";
     my $page = LWP::Simple::get($request);
     my @digits = split /\s+/, $page;
+    foreach (@digits) { $_ ^= int rand($max) }    
     return assemble_digits(\@digits);
 }
 
