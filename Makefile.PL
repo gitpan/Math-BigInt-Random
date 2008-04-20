@@ -7,4 +7,5 @@ WriteMakefile(
     AUTHOR       => 'William Hererra (whererra@skylightview.com)',
     ABSTRACT     => 'Create random very large integers',
     PREREQ_PM    => { Math::BigInt => 0, Carp => 0, Test::More => 0 },
+    LICENSE      => 'perl',
 );

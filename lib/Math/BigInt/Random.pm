@@ -1,6 +1,6 @@
 package Math::BigInt::Random;
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 use strict;
 use warnings;
@@ -157,6 +157,8 @@ Math::BigInt::Random -- arbitrary sized random integers
 
 =head1 FUNCTION ARGUMENTS
 
+=over 4
+
 This module exports a single function called random_bigint, which returns 
 a single random Math::BigInt of arbitrary size.  
 
@@ -192,7 +194,25 @@ Parameters to the function are given in paired hash style:
      number generation.  Note this is NOT secure, since anyone monitoring
      the connnection might be able to read the numbers that are received.
      It is quite random, however.
+
+=back
+
+=head2 Class Internal Methods and Functions
+
+=over 4
+
+=item assemble_digits
+
+=item bigint_rand
+
+=item get_random_hex_digits
+
+=item get_random_org_digits
+
+=item random_bigint
     
+=back
+
 =head1 AUTHOR
 
 William Herrera (wherrera@skylightview.com)

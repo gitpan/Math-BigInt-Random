@@ -10,3 +10,7 @@ Revision history for Perl module Math::BigInt::Random
 0.03 Sat 10 Feb 2007
     - add xor with rand() obscuration to random.org digits for security
     
+0.04 Sun 20 April 2008
+    - pod changes, and tests for pod
+    
+    
